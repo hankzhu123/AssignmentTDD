@@ -11,6 +11,11 @@ namespace AssignmentTDD
 
 
         // missing constructor here
+        public StackClass(int[] stack)
+        {
+            m_stack = stack;
+        }
+
 
         public int[] Stack
         {
@@ -55,7 +60,7 @@ namespace AssignmentTDD
             StackClass sc = new StackClass(newStack);
 
             sc.Pop();
-            sc.Push(100);
+            //sc.Push(100);
 
             foreach (int i in sc.Stack)
             {

@@ -17,7 +17,7 @@ namespace StackClassTests
             StackClass sc = new StackClass(startingStack);
 
             // Act
-            sc.Push(theInteger);
+            //sc.Push(theInteger);
 
             // actual 1 2 3 111
             // expect 1 2 3 4   111
