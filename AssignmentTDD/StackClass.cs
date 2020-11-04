@@ -3,36 +3,21 @@ using System.Collections;
 
 namespace AssignmentTDD
 {
-    class StackClass
+    public class StackClass
     {
         private int[] m_stack;
 
         private StackClass() { }
 
-        public StackClass(int[] stack)
-        {
-            m_stack = stack;
-        }
+
+        // missing constructor here
 
         public int[] Stack
         {
             get { return m_stack; }
         }
 
-        public void Push(int number)
-        {
-            int[] newS = new int[m_stack.Length+1];
-
-            for (int i = 0; i < m_stack.Length; i++)
-            {
-                newS[i] = m_stack[i];
-            }
-
-            newS[m_stack.Length] = number;
-
-            m_stack = newS;
-            
-        }
+        // missing a push fucntion here
 
         public void Pop()
         {
