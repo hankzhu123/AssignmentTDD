@@ -23,6 +23,19 @@ namespace AssignmentTDD
         }
 
         // missing a push fucntion here
+        public void Push(int number)
+        {
+            int[] newS = new int[m_stack.Length + 1];
+
+            for (int i = 0; i < m_stack.Length; i++)
+            {
+                newS[i] = m_stack[i];
+            }
+
+            newS[m_stack.Length] = number;
+
+            m_stack = newS;
+        }
 
         public void Pop()
         {
@@ -60,7 +73,7 @@ namespace AssignmentTDD
             StackClass sc = new StackClass(newStack);
 
             sc.Pop();
-            //sc.Push(100);
+            sc.Push(100);
 
             foreach (int i in sc.Stack)
             {
